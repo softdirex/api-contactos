@@ -1,7 +1,6 @@
 package com.test.contactos.api;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class ContactoRequest {
@@ -11,7 +10,6 @@ public class ContactoRequest {
 	@Size(min=2, max=45, message="El nombre debe tener entre {min} y {max} caracteres")
 	private String name;
 	
-	@Pattern(regexp="^\\+[0-9]*$", message="El número de telefono sólo puede tener dígitos iniciando con el símbolo +")
 	private String phone;
 	private String email;
 	public Long getId() {
