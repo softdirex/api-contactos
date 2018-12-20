@@ -105,3 +105,6 @@ COMMIT;
 -	En la pestaña `Spring Boot`,asígnele un nuevo nombre a la configuración,(Ejemplo: `ws-contactos - WsContactosApplication`)  seleccione el proyecto `ws-contactos`, seleccione como Main Class a la clase `com.test.contactos.WsContactosApplication` y si el perfil está en blanco asígnele el valor: `uat`.
 
 - Ejecute el proyecto presionando el botón `Run`.
+
+## Pruebas del sistema
+- Para probar la api, descargue la parte [Front-End desarrollada en angular](https://github.com/softdirex/vista-contactos) desde el repositorio y siga las instrucciones de instalación que allí se mencionan.
