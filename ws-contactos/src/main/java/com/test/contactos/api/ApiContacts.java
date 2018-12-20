@@ -9,6 +9,7 @@ import javax.validation.constraints.NotNull;
 
 import org.dozer.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,11 +28,13 @@ public class ApiContacts {
 	@Autowired
 	RepositorioContacto dao;
 	
+	@CrossOrigin
 	@RequestMapping(value="/contactos", method=RequestMethod.GET)
 	public List<Contacto> getContactos(){
 		return dao.findAll();
     }
 	
+	@CrossOrigin
 	@RequestMapping(value="/contactos/{id}", method=RequestMethod.GET)
 	public List<Contacto> findById(@PathVariable @NotNull @DecimalMin("0") Set<Long> id){
 		return dao.findAllById(id);
@@ -40,7 +43,7 @@ public class ApiContacts {
 	@Autowired
 	Mapper mapper;
 	
-	
+	@CrossOrigin
 	@RequestMapping(value="/contacto", method=RequestMethod.POST)
 	public ContactoResponse updateOrSave(@RequestBody @Valid ContactoRequest contactoRequest)
 	{
