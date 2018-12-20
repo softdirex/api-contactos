@@ -3,25 +3,25 @@ Api con crud de contactos desarrollada con ● Java/Spring ● JPA ● Base de d
 
 ## Recomendaciones generales
 
-1. Tener instalado el plugin Spring Tools 4 en Eclipse
+1.  Tener instalado el plugin Spring Tools 4 en Eclipse
 2.	En el desarrollo de esta prueba se trabajó con el IDE Eclipse versión 2018-09 (4.9.0)
 3.	Se debe tener instalada la CLI de angular para las pruebas del front-end
 4.	Verifique la correcta configuración de los puertos
-5.	Para abrir el proyecto de java, seleccione la carpeta ws-contactos en su workspace.
-6.	Crear una cuenta de usuario en su base de datos MySql con el nombre: contactos_user y la clave qwerty123 asignándole los permisos necesarios para guardar y modificar valores en la base de datos
-7.	Importar la base de datos contactos_db con el script sql del item [Base de datos](https://github.com/softdirex/api-contactos#base-de-datos)
+5.	Para abrir el proyecto de java, seleccione la carpeta `ws-contactos` en su workspace.
+6.	Crear una cuenta de usuario en su base de datos MySql con el nombre `contactos_user` y la clave `qwerty123` asignándole los permisos necesarios para guardar y modificar valores en la base de datos
+7.	Importar la base de datos `contactos_db` con el script sql del item [Base de datos](https://github.com/softdirex/api-contactos#base-de-datos)
 
 
 ## Descarga e importación en Eclipse
 
-- Descarga desde este repositorio como archivo zip
+- Descargue desde este repositorio como archivo zip
 
-- Abra eclipse y en el menú superior seleccione Abrir proyecto desde archivo… 
+- Abra eclipse y en el menú superior seleccione `Abrir proyecto desde archivo…` 
 
-- Seleccione dentro del directorio del proyecto descargado la carpeta ws-contactos y haga clic en Finalizar
+- Seleccione dentro del directorio del proyecto descargado la carpeta `ws-contactos` y haga clic en `Finalizar`
 
 ## Base de datos
-- Debe cerciorarse de que la base de datos MySql está levantada en el puerto 3306 asigbe un usuario con el nombre: `contactos_user` y la clave: `qwerty123`
+- Debe cerciorarse de que la base de datos MySql está levantada en el puerto 3306 asigne un usuario con el nombre `contactos_user` y la clave `qwerty123`
 
 - Importe la base de datos con el siguiente sql de prueba:
 ```
